@@ -5,5 +5,5 @@ if [ ! -e "badapple.mp4" ]; then
 fi
 rm -rf frames
 mkdir -p frames
-ffmpeg -i badapple.mp4 frames/%8d.png
+ffmpeg -i badapple.mp4 -r 30 frames/%8d.png
 echo enjoy
